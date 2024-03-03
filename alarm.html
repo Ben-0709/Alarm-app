@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alarm App</title>
+    <link rel="stylesheet" href="alarm.css" />
+    <link rel="icon" href="./alarm-512.webp" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h2>Alarm</h2>
+      <div class="timer-display">00:00:00</div>
+      <div class="container">
+        <div class="inputs">
+          <label for="hourInput">
+            <span>hours*</span>
+            <input
+              type="number"
+              id="hourInput"
+              placeholder="00"
+              required
+            />
+          </label>
+          <label for="minuteInput">
+            <span>minutes*</span>
+            <input
+              type="number"
+              id="minuteInput"
+              placeholder="00"
+              required
+            />
+          </label>
+          <button id="set">Add Alarm</button>
+        </div>
+        <div class="activeAlarms"></div>
+      </div>
+    </div>
+    <script src="alarm.js"></script>
+  </body>
+</html>
