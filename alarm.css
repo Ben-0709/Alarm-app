@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #5990f6;
+  color: #000;
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+button,
+input,
+a {
+  cursor: pointer;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: max-content;
+  padding: 3.12em 5em;
+  border-radius: 0.5em;
+  margin: 0 auto;
+}
+
+h2{
+  display: block;
+  margin: 0 auto 10px;
+  width: 100%;
+  max-width: max-content;
+  font-size: 32px;
+  font-weight: 900;
+  color: darkblue;
+}
+
+.container {
+  margin: 0 auto;
+  width: 850px;
+  max-width: 850px;
+}
+
+.timer-display {
+  font-size: 2.18em;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+  width: 100%;
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow:row nowrap;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.inputs input {
+  width: 2.8em;
+  font-size: 1.3em;
+  border: 1px solid #000000;
+  border-radius: 0.1em;
+  padding: 0.4em 0.2em;
+}
+
+.inputs > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: max-content;
+}
+
+#set {
+    background-color: #377dff;
+    border: 2px solid #000;
+    padding: 0.5em;
+    display: block;
+    margin: 20px auto;
+    border-radius: 0.2em;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.alarm {
+  display: grid;
+  grid-template-columns: 8fr 2fr 2fr;
+  gap: 1em;
+  margin-top: 1.5em;
+  align-items: center;
+  border-bottom: 1px solid #898f9b;
+  padding-bottom: 0.6em;
+}
+
+.alarm input[type="checkbox"] {
+  appearance: none;
+  height: 2em;
+  width: 3.75em;
+  background-color: #e2e2ec;
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s linear;
+}
+
+.alarm input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  background-color: #757683;
+  height: 1.43em;
+  width: 1.43em;
+  border-radius: 50%;
+  top: 0.25em;
+  left: 0.25em;
+  transition: all 0.4s linear;
+}
+
+.alarm input[type="checkbox"]:checked {
+  background-color: #d2e2ff;
+  transition: all 0.4s linear;
+}
+
+.alarm input[type="checkbox"]:checked:before {
+  background-color: #377dff;
+  left: 2em;
+  transition: all 0.4s linear;
+}
+
+.deleteButton {
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #f00;
+  border: 2px solid red;
+  cursor: pointer;
+}
